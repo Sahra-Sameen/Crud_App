@@ -14,8 +14,6 @@ class ItemController extends Controller
     public function index(): View
     {
         $items = ItemDetail::all();
-
-        //$items = ItemDetail::all(); // Retrieve all items from the database
         return view('items.index')->with('items', $items);
     }
 

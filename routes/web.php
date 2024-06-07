@@ -15,8 +15,8 @@ use App\Http\Controllers\ItemController;
 */
 
 Route::get('/', function () {
-    return view('items.index');
+    return redirect()->route('items.index');
 });
 
-
 Route::resource('items', ItemController::class);
+
