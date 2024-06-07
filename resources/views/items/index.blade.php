@@ -36,12 +36,12 @@
                                         <td>{{ $item->price }}</td>
                                         <td>{{ $item->quantity }}</td>
                                         <td>
-                                            <a href="{{ url('/items/' . $item->id) }}" title="View Item">
+                                            <a href="{{ url('/items/' . $item->id) }}" title="View Item" style="text-decoration: none;">
                                                 <button class="btn btn-info btn-sm">
                                                     <i class="fa fa-eye" aria-hidden="true"></i> View
                                                 </button>
                                             </a>
-                                            <a href="{{ url('/items/' . $item->id . '/edit') }}" title="Edit Item">
+                                            <a href="{{ url('/items/' . $item->id . '/edit') }}" title="Edit Item" style="text-decoration: none;">
                                                 <button class="btn btn-primary btn-sm">
                                                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit
                                                 </button>

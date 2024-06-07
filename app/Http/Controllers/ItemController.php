@@ -31,7 +31,7 @@ class ItemController extends Controller
     public function store(Request $request): RedirectResponse
     {
         $request->validate([
-            'product_id' => 'required|unique:item_details',
+            'product_id' => 'required|unique:itemdetails',
             'item_name' => 'required',
             'price' => 'required|numeric',
             'quantity' => 'required|integer',
@@ -75,7 +75,7 @@ class ItemController extends Controller
     public function update(Request $request, string $id): RedirectResponse
     {
         $request->validate([
-            'product_id' => 'required|unique:item_details,product_id,' . $id,
+            'product_id' => 'required|unique:itemdetails,product_id,' . $id,
             'item_name' => 'required',
             'price' => 'required|numeric',
             'quantity' => 'required|integer',
