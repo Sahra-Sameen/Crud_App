@@ -31,7 +31,7 @@
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $item->product_id }}</td>
                                     <td>{{ $item->item_name }}</td>
-                                    <td>${{ $item->price }}</td>
+                                    <td>Rs.{{ $item->price }}</td>
                                     <td>{{ $item->quantity }}</td>
                                     <td>
                                         <a href="{{ url('/items/' . $item->id) }}" class="btn btn-info btn-sm">
