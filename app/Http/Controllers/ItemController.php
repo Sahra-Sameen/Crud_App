@@ -50,7 +50,7 @@ class ItemController extends Controller
     {
         $item = ItemDetail::find($id);
         if (!$item) {
-            return redirect('items')->with('flash_message', 'Item not found!');
+            return redirect('items')->with('flash_message', 'Sorry Item not found!');
         }
 
         return view('items.show')->with('item', $item);
@@ -63,7 +63,7 @@ class ItemController extends Controller
     {
         $item = ItemDetail::find($id);
         if (!$item) {
-            return redirect('items')->with('flash_message', 'Item not found!');
+            return redirect('items')->with('flash_message', 'check Item not found!');
         }
 
         return view('items.edit')->with('item', $item);
